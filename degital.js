@@ -3,7 +3,7 @@ function nowClock(){
   var nowHour = set2(nowTime.getHours());
   var nowMin = set2(nowTime.getMinutes());
   var nowSec = set2(nowTime.getSeconds());
-  var msg = "現在の時刻　　"+nowHour+":"+nowMin+":"+nowSec;
+  var msg = nowHour+":"+nowMin+":"+nowSec;
   document.getElementById("GenzainoJikoku").innerHTML = msg;
 }
 

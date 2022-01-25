@@ -3,8 +3,8 @@ function nowClock(){
   var nowHour = set2(nowTime.getHours());
   var nowMin = set2(nowTime.getMinutes());
   var nowSec = set2(nowTime.getSeconds());
-  var msg = "現在時刻　　"+nowHour+":"+nowMin+":"+nowSec;
-  document.getElementById("DegitalClock").innerHTML = msg;
+  var msg = nowHour+":"+nowMin+":"+nowSec;
+  document.getElementById("GenzainoJikoku").innerHTML = msg;
 }
 
 function set2(num){
@@ -17,4 +17,6 @@ function set2(num){
   }return ret;
 }
 
-setInterval('nowClock()',1000);
+function setClock(){
+  setInterval('nowClock()',1000);
+}
